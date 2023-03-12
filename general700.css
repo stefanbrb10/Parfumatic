@@ -15,3 +15,7 @@ body{
     margin-bottom: 15px;
     border:none;
 }
+
+table{
+    border-spacing: 0;
+}
