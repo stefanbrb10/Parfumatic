@@ -1,0 +1,22 @@
+html{
+    font-size:16px;
+}
+
+#grid-pagina{
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "z-prezentare z-prezentare"
+                    "z-produse z-calendar"
+                    "z-produse z-anunturi"
+                    "z-useri-online z-date-site"
+                    "z-date-vizitatori z-prezentari"
+                    "z-anunturi z-anunturi"
+                    "z-program z-intrebari"
+                    "z-galerie" "z-galerie"
+                    ;
+}
+
+body{
+    --spatiere-pagina: 15px;
+
+}
