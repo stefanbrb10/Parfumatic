@@ -198,6 +198,7 @@ img{
     border-top: 20px solid var(--culoare-piersica);
     border-radius: 30px;
     position: relative;
+    vertical-align: top;
     right: 5px;
     rotate:135deg;
     line-height: 10px;
@@ -217,6 +218,16 @@ table {
     width: 100%;
     text-align: center;
 }
+
+#calendar iframe{
+
+    border-collapse: separate;
+    border-spacing: 2px;
+    width: 100%;
+    text-align: center;
+
+}
+
 th, td {
     padding: 8px;
     border: 1px solid black;
@@ -246,3 +257,5 @@ tbody > tr:hover{
 #containerTabel{
     overflow-x: visible;
 }
+
+/* banner -> position absolute probabil */
