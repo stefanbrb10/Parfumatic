@@ -2,24 +2,31 @@ html{
     font-size:16px;
 }
 
+body{
+    --spatiere-pagina: 30px;
+    --padding-sectiune: 10px;
+}
+
+#grid-pagina > *{
+    margin-bottom: 15px;
+    border:none;
+}
+
 #grid-pagina{
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 
-    "z-prezentare z-prezentare"
+                    "z-prezentare z-prezentare"
                     "z-produse z-calendar"
                     "z-produse z-anunturi"
                     "z-useri-online z-date-site"
                     "z-date-vizitatori z-prezentari"
-                    "z-anunturi z-anunturi"
                     "z-program z-intrebari"
-                    "z-galerie" "z-galerie"
+                    "z-galerie z-galerie"
                     ;
 }
 
-body{
-    --spatiere-pagina: 15px;
 
-}
+
 
 table{
     border-spacing: 0;
