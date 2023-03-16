@@ -1,0 +1,261 @@
+
+html{
+    --culoare-principala: #A2E4B8;
+    --culoare-piersica: #E3A78A;
+    --culoare-roz: #E3B8DF;
+    --culoare-albastru: #ACE3DD;
+    --culoare-verde: #ACE396;
+    --culoare-text: black;
+    --culoare-background: white;
+
+    --padding-sectiune: 15px;
+    --spatiere-pagina: 30px;
+    --latime-buton: 150px;
+    --intaltime-buton:50px;
+
+    font-family: 'Roboto', sans-serif;
+
+}
+
+header > img {
+    float: left;
+    height: 50px;
+    width: 50px;
+    
+  }
+
+header {
+    overflow:auto;
+}
+
+header > h1{
+    position: relative;
+    float:left;
+}
+
+body{
+    background-color: var(--culoare-principala);
+    color:var(--culoare-text);
+    padding-left:var(--spatiere-pagina);
+    padding-right:var(--spatiere-pagina);
+    min-width: 450px;
+    margin: 0;
+}
+
+#grid-pagina > *{
+    border: 3px solid var(--culoare-albastru);
+    padding: var(--padding-sectiune);
+}
+
+
+#grid-pagina{
+    display:grid;
+    background-color: var(--culoare-background);
+   grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+        "z-prezentare z-prezentare z-prezentare"
+        "z-produse  z-calendar z-calendar"
+        "z-produse  z-anunturi z-anunturi"
+        "z-useri-online z-date-vizitatori z-date-site"
+        "z-prezentari z-program z-intrebari"
+        "z-galerie z-galerie z-galerie";
+    gap: 20px 10px;
+    padding: 10px;
+}
+
+#prezentare{
+    grid-area: z-prezentare;
+}
+#welcome{
+    grid-area: z-welcome;
+}
+
+#produse{
+    grid-area: z-produse;
+}
+
+#calendar{
+    grid-area: z-calendar;
+}
+
+#anunturi{
+    grid-area: z-anunturi;
+}
+
+#useri-online{
+    grid-area: z-useri-online;
+}
+
+#date-vizitatori{
+    grid-area: z-date-vizitatori;
+}
+
+#date-site{
+    grid-area: z-date-site;
+}
+
+#intrebari{
+    grid-area: z-intrebari;
+}
+
+#program{
+    grid-area: z-program;
+}
+
+#prezentari{
+    grid-area: z-prezentari;
+}
+
+#galerie{
+    grid-area:z-galerie;
+}
+
+ #prezentare picture{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+#prezentari a{
+    text-decoration: none;
+    display:table-cell;
+    vertical-align:middle;
+    width:(--latime-buton);
+    height:var(--inaltime-buton);
+    background-color: var(--culoare-albastru);
+    overflow: hidden;
+    text-align: center;
+    border: 1px solid var(--culoare-verde);
+    transition: background-color 0.6s linear;
+}
+
+#prezentari a:hover{
+    background-color: var(--culoare-piersica);
+    border: 1px solid var(--culoare-principala);
+    transition: background-color 0.6s linear;
+    color: white;
+}
+
+.taburi-iframe {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  
+  .ifr-linkuri {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-right: 20px;
+  }
+  
+  .ifr-linkuri a {
+    margin-bottom: 10px;
+  }
+  
+  .ifr-player {
+    flex: 1;
+    width:max-content;
+    height: max-content;
+  }
+
+img{
+    width:100%;
+    max-width: 600px;
+}
+
+#link-top{
+    padding: 5px;
+    margin: 10px;
+    border: solid 2px var(--culoare-piersica);
+    width: 25px;
+    height: 25px;
+    rotate:45deg;
+
+}
+
+#link-top:hover{
+    opacity: 70%;
+    border-color: var(--culoare-background);
+}
+
+.helper{
+    position: relative;
+    display: inline-block;
+}
+
+.helper:hover{
+    background-color: var(--culoare-background);
+}
+
+
+.triunghi{
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 20px solid var(--culoare-piersica);
+    border-radius: 30px;
+    position: relative;
+    vertical-align: top;
+    right: 5px;
+    rotate:135deg;
+    line-height: 10px;
+}
+
+.triunghi:hover{
+    border-top: 20px solid var(--culoare-albastru);
+}
+
+#captionTabel {
+    caption-side: bottom;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 2px;
+    width: 100%;
+    text-align: center;
+}
+
+#calendar iframe{
+
+    border-collapse: separate;
+    border-spacing: 2px;
+    width: 100%;
+    text-align: center;
+
+}
+
+th, td {
+    padding: 8px;
+    border: 1px solid black;
+}
+
+th{
+    background-color: var(--culoare-principala);
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+tbody >tr{
+    opacity:0.7;
+    transition: 0.3s;
+}
+
+tbody > tr:hover{
+    opacity:1;
+}
+
+#containerTabel{
+    overflow-x: visible;
+}
+
+/* banner -> position absolute probabil */
