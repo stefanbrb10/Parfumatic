@@ -1,0 +1,77 @@
+@page {
+     size: A4 portrait;
+}
+
+@page :left {
+    margin-right: 1cm;
+    margin-left: 2cm;
+    width: 100%;
+}
+
+
+@page :right {
+    margin-right: 2cm;
+    margin-left: 1cm;
+    height: 100%;
+}
+
+#banner{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 20px; 
+    border: 2px double black;
+}
+
+iframe, img {
+    display: none;
+}
+
+#grid-pagina{
+    box-sizing: border-box;
+    display: block;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    opacity: 0.3;
+    text-align: center;
+    page-break-after: always;
+}
+
+footer {
+    page-break-before: always;
+}
+
+meniu.li {
+    display: block;
+}
+
+#watermark {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#watermark::after {
+    opacity: 0.3;
+    padding: 5px;
+    display: block;
+    width: 60%;
+    height: 10%;
+    background: white;
+    border: 2px solid black;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-right: none;
+    content: "Stefan Barbu";
+}

@@ -19,9 +19,10 @@ html{
 
 header > img {
     float: left;
-    height: 50px;
-    width: 50px;
-    
+    height: 70px;
+    width: 70px;
+    padding: 5px;
+    padding-top: 10px;
   }
 
 header {
@@ -29,8 +30,10 @@ header {
 }
 
 header > h1{
-    position: relative;
+    position:relative;
     float:left;
+    justify-content: center;
+    font-size: 40px;
 }
 
 body{
@@ -59,7 +62,7 @@ body{
         "z-useri-online z-date-vizitatori z-date-site"
         "z-prezentari z-program z-intrebari"
         "z-galerie z-galerie z-galerie";
-    gap: 20px 10px;
+    grid-gap: 20px 10px;
     padding: 10px;
 }
 
@@ -121,7 +124,7 @@ body{
     text-decoration: none;
     display:table-cell;
     vertical-align:middle;
-    width:(--latime-buton);
+    width:var(--latime-buton);
     height:var(--inaltime-buton);
     background-color: var(--culoare-albastru);
     overflow: hidden;
@@ -256,6 +259,12 @@ tbody > tr:hover{
 
 #containerTabel{
     overflow-x: visible;
+}
+
+footer img{
+    float: inherit;
+    width:15px;
+    height:15px;
 }
 
 /* banner -> position absolute probabil */

@@ -1,0 +1,13 @@
+body {
+    --inaltime-meniu: 30px;
+    --latime-buton: 125px;
+    font-size: 10px;
+}
+
+#casuta {
+    display: block;
+}
+
+#acasa {
+    display: none;
+}
