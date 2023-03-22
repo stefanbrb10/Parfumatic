@@ -26,7 +26,8 @@ header > img {
   }
 
 header {
-    overflow:auto;
+    overflow: auto;
+    box-shadow: 7px 3px 3px grey;
 }
 
 header > h1{
@@ -222,15 +223,6 @@ table {
     text-align: center;
 }
 
-#calendar iframe{
-
-    border-collapse: separate;
-    border-spacing: 2px;
-    width: 100%;
-    text-align: center;
-
-}
-
 th, td {
     padding: 8px;
     border: 1px solid black;
@@ -267,4 +259,12 @@ footer img{
     height:15px;
 }
 
-/* banner -> position absolute probabil */
+footer {
+    background-color: var(--culoare-roz);
+    border-top: 2px solid black;
+    box-shadow: 10px 5px 5px grey;
+}
+
+#contact > h2 {
+    color: white;
+}
