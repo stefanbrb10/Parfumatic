@@ -3,7 +3,9 @@
     "",
     "\\resurse",
     "\\resurse\\css",
-    "\\resurse\\ico"
+    "\\resurse\\ico",
+    "\\resurse\\scss"
   ],
+  "SelectedNode": "\\resurse\\scss\\nav.scss",
   "PreviewInSolutionExplorer": false
 }
