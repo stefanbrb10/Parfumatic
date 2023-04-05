@@ -1,11 +1,12 @@
 {
   "ExpandedNodes": [
     "",
-    "\\resurse",
     "\\resurse\\css",
     "\\resurse\\ico",
-    "\\resurse\\scss"
+    "\\resurse\\scss",
+    "\\views",
+    "\\views\\pagini"
   ],
-  "SelectedNode": "\\resurse\\scss\\nav.scss",
+  "SelectedNode": "\\index.js",
   "PreviewInSolutionExplorer": false
 }

@@ -17,6 +17,22 @@ html{
 
 }
 
+a:visited{
+    color: (--culoare-verde);
+}
+
+a[href^="http"]::before {
+    content: "\2BB3"; 
+    font-size: 150%; 
+    display: inline-block; 
+    margin-right: 0.5em; 
+    color: black;
+}
+
+a[href^="http"]:hover::before {
+    color: var(--culoare-principala);
+}
+
 header > img {
     float: left;
     height: 70px;
