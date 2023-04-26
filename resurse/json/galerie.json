@@ -1,39 +1,30 @@
 {
-	"cale_galerie":"resurse/imagini/galerie",
+	"cale_galerie":"resurse/imagini/galerie/parfumuri",
 	"imagini": [
 		{
-			"fisier":"briose-frisca.png",
-			"descriere":"Brioșe",
-			"luni":["martie","februarie","noiembrie", "aprilie"]
+			"fisier":"acqua.jpg",
+			"descriere":"Acqua di gio",
+			"alt": "Placeholder imagine parfum",
+			"luni":["martie","aprilie","mai", "iunie"]
 		},
 		{
-			"fisier":"clatite.png",
-			"descriere":"Clătite cu dulceață",
-			"luni":["ianuarie","februarie","iunie"]
+			"fisier":"azzaro.jpg",
+			"descriere":"Azzaro wanted",
+			"alt": "Placeholder imagine parfum",
+			"luni":["ianuarie","februarie","decembrie"]
 			
 		},
 		{
-			"fisier":"gogosi.png",
-			"descriere":"Gogoși glazurate",
-			"luni":["ianuarie","noiembrie","iunie","martie", "aprilie"]
+			"fisier":"spicebomb_extreme.jpg",
+			"descriere":"Viktor Rolf Spicebomb Extreme",
+			"alt": "Placeholder imagine parfum",
+			"luni":["decembrie","ianuarie","februarie"]
 		},
 		{
-			"fisier":"tort-scortisoara.png",
-			"descriere":"Tort cu scorțisoară",
-			
-			"luni":["noiembrie", "aprilie"]
-		},
-		{
-			"fisier":"prajitura-ciocolata.png",
-			"descriere":"Prăjitură cu ciocolată"
-		},
-		{
-			"fisier":"tarta-afine.png",
-			"descriere":"Tartă cu afine"
-		},
-		{
-			"fisier":"tort-trandafiri.png",
-			"descriere":"Tort special"
+			"fisier":"spicebomb_night.jpg",
+			"descriere":"Viktor Rolf Night Vision",
+			"alt": "Placeholder imagine parfum",
+			"luni":["decembrie","ianuarie","februarie"]
 		}
 	]
 }

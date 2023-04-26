@@ -59,7 +59,15 @@
 
             <section id = "anunturi">
                 <h2>Anunturi</h2>
+                <div id ="text-de-reflectat">
+                    Va urma
+                    <div id = "text-reflectat">
+                        Va urma
+                    </div>
+                </div>
+                
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate minima maxime earum inventore maiores in dolor voluptates laborum id incidunt dicta repellendus at tenetur aut quisquam molestias, similique alias voluptate!
+                <div id = "imagine"> </div>
             </section>
 
             <setion id = "useri-online">
@@ -73,6 +81,7 @@
             </section>
 
             <section id  = "date-site">
+                <button class="btn btn-primary">ceva</button>
                 <h2> Date despre site si server</h2>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui nulla dolorem suscipit? Quis iure cumque dicta sapiente provident quae deserunt necessitatibus tempore. Doloribus eius quia quibusdam. Impedit at eos deleniti.
             </section>
@@ -154,36 +163,23 @@
             <section id="galerie">
                 <h2>Galerie</h2>
                 <div id="grid-galerie-statica">
-                    <% for (let imag of locals.imagini) { 
-                        d = new Date();
+                    <%  let i = 0;
+                        for (let imag of locals.imagini) { 
                         var v_luni=["ianuarie", "februarie", "martie","aprilie","mai","iunie","iulie","august","septembrie","octombrie","noiembrie","decembrie"];
-                        if(imag.luni && imag.luni.includes(v_luni[d.getMonth()])){
-                        %>
+                        if(imag.luni.includes(v_luni[11])){ %>
                        
+                            <figure>
+                                     <picture> <img src =""> </picture>
+                                     </figure>
                             <figure>
                                 <picture>
                                     <source srcset="<%- imag.fisier_mediu %>" media="(max-width:1000px)" />
-                                    <img src="<%- imag.fisier %>" alt="imagine">
+                                    <img src="<%- imag.fisier %>" alt="<%- imag.alt %>">
                                 </picture>
-                                <figcaption><%- imag.descriere %></figcaption>
+                                <figcaption> <%- imag.descriere %> </figcaption>
                             </figure>
-                            <% } %>
-                
-                    <% }  %>
-                </div>
-                <div id="grid-galerie">
-                    <figure>
-                    <img src="resurse/imagini/spicebomb.webp" alt="spicebomb" width = "700">
-                    <figcaption>Viktor&Rolf Spicebomb</figcaption>
-                    </figure>
-                    <figure>
-                    <img src="resurse/imagini/lanuit.webp" alt="ysl la nuit" width = "700">
-                    <figcaption>YSL La Nuit de L'Homme</figcaption>
-                    </figure>
-                    <figure>
-                    <img src="resurse/imagini/jean.jpg" alt="jpg La belle" width = "700">
-                    <figcaption>Jean Paul Gaultier La belle</figcaption>
-                    </figure>
+                           <% i++;} }
+                  %>
                 </div>
             </section>
 
