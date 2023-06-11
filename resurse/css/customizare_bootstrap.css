@@ -31,7 +31,7 @@
   --bs-gray-900: #212529;
   --bs-primary: red;
   --bs-secondary: purple;
-  --bs-success: #198754;
+  --bs-success: #34ffa0;
   --bs-info: #0dcaf0;
   --bs-warning: #ffc107;
   --bs-danger: #dc3545;
@@ -72,7 +72,10 @@
   --bs-link-hover-color: #cc0000;
   --bs-code-color: #d63384;
   --bs-highlight-bg: #fff3cd;
+
 }
+
+
 
 *,
 *::before,
@@ -2836,8 +2839,8 @@ textarea.form-control-lg {
 }
 
 .btn-success {
-  --bs-btn-color: #fff;
-  --bs-btn-bg: #198754;
+  --bs-btn-color: #f3e4e4;
+  --bs-btn-bg: #0cd227;
   --bs-btn-border-color: #198754;
   --bs-btn-hover-color: #fff;
   --bs-btn-hover-bg: #157347;

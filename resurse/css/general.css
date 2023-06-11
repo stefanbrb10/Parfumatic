@@ -7,6 +7,8 @@ html{
     --culoare-verde: #ACE396;
     --culoare-text: black;
     --culoare-background: white;
+    --culoare-background-dark: black;
+    --culoare-text-dark: white;
 
     --padding-sectiune: 15px;
     --spatiere-pagina: 30px;
@@ -44,6 +46,7 @@ header > img {
 header {
     overflow: auto;
     box-shadow: 7px 3px 3px grey;
+    color: var(--culoare-text);
 }
 
 header > h1{
@@ -60,6 +63,16 @@ body{
     padding-right:var(--spatiere-pagina);
     min-width: 450px;
     margin: 0;
+}
+
+body.dark{
+    background-color: var(--culoare-background-dark);
+    color: black;
+
+}
+
+body.dark header{
+    color: white;
 }
 
 #grid-pagina > *{
@@ -362,3 +375,13 @@ footer {
     background-color: rgb(var(--culoare-roz));
     mix-blend-mode:darken;
 }
+
+  input[type = "radio"][value="dark"]:checked ~ body{
+    background-color: #333;
+    color: #fff;
+  }
+
+  input[type = "radio"][value="white"]:checked ~ body {
+    background-color: #fff;
+    color: #333;
+  }

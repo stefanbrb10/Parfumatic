@@ -1,6 +1,11 @@
+<script src = "/resurse/js/tema.js"> </script>
 <header>
     <img src="resurse/ico/spray.svg" alt="My Happy SVG" />
     <h1> &nbsp &nbspParfumatic &nbsp; </h1>
+    
+      <button class="btn btn-secondary" id = "tema">Dark/light mode <i class="fas fa-sun"></i> / <i class="fas fa-moon"></i></button>
+      
+
 </header>
 <nav>
     <p id="watermark"></p>
@@ -29,6 +34,23 @@
             </ul>
         </li>
         <li>
+                <% if(locals?.utilizator?.areDreptul?.(Drepturi.vizualizareUtilizatori)) { %>
+                    <li><div>Administrare</div>
+                        <ul>
+                            <li><a href="/useri">Useri</a></li>
+                            <li><a href="/grafice">Grafice</a></li>
+                            <li><a href="/comenzi">Comenzi</a></li>
+                        </ul>
+                    </li>
+                <% } %>
+                <% if(locals.utilizator) { %>
+                    <li><div><%- locals.utilizator.username %></div>
+                        <ul>
+                            <li><a href="/profil">Profil</a></li>
+                            <li><a href="/logout">Logout</a></li>
+                        </ul>
+                    </li>
+                <% } %>
             <div>Despre</div>
             <ul>
                 <li><a href="#prezentare">Prezentare</a></li>
@@ -40,3 +62,14 @@
         </li>
     </ul>
 </nav>
+
+<script>
+    const modeRadios = document.querySelectorAll('input[name="mode"]');
+    
+    modeRadios.forEach(radio => {
+      radio.addEventListener('change', event => {
+        const selectedMode = event.target.value;
+        document.documentElement.setAttribute('data-mode', selectedMode);
+      });
+    });
+</script>
